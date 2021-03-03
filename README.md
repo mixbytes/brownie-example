@@ -9,10 +9,9 @@
 * [python3](https://www.python.org/downloads/release/python-368/) version 3.6 or greater, python3-dev
 * [ganache-cli](https://github.com/trufflesuite/ganache-cli) - tested with version [6.11.0](https://github.com/trufflesuite/ganache-cli/releases/tag/v6.11.0)
 
-### с помощью `pipx`
+### с помощью  [`pipx`](https://github.com/pipxproject/pipx)
 
-Рекомендованная установка. 
- [`pipx`](https://github.com/pipxproject/pipx) установит brownie в виртуальное окружение и сделает его доступным
+Рекомендованная. Установит brownie в виртуальное окружение и сделает его доступным
  глобально, без необходимости каждый раз окружение активировать. 
 
 Установка `pipx`:
@@ -28,9 +27,7 @@ python3 -m pipx ensurepath
 pipx install eth-brownie
 ```
 
-### с помощью `pip`
-
-Последнюю версию можно установить с помощью [`pip`](https://pypi.org/project/pip/):
+### с помощью [`pip`](https://pypi.org/project/pip/):
 
 ```bash
 pip install eth-brownie
