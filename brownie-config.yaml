@@ -1,5 +1,10 @@
-# exclude SafeMath when calculating test coverage
-# https://eth-brownie.readthedocs.io/en/v1.10.3/config.html#exclude_paths
-reports:
-  exclude_contracts:
-    - SafeMath
+# require OpenZepplin Contracts
+dependencies:
+  - OpenZeppelin/openzeppelin-contracts@3.0.0
+
+# path remapping to support OpenZepplin imports with NPM-style path
+compiler:
+  solc:
+    version: 0.6.12
+    remappings:
+      - "@openzeppelin=OpenZeppelin/openzeppelin-contracts@3.0.0"
